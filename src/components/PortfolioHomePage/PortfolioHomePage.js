@@ -12,7 +12,7 @@ const portfolioHomePage = () => {
                 LATEST PROJECTS
             </Typography>
             <ProjectsList projects={updatedProjects}/>
-            <Button variant='raised'
+            <Button variant='outlined'
                     color='secondary'
                     style={{display: 'block', margin: '40px auto 32px'}}
             >
