@@ -1,6 +1,6 @@
 export const projects = [
     {
-        id: 'wps',
+        id: 'world_poker_school',
         title: 'DMYTRY LESNOY POKER SCHOOL',
         categories: [
             'development',
@@ -14,7 +14,7 @@ export const projects = [
         imgs: []
     },
     {
-        id: 'rr',
+        id: 'restaurant_reviews',
         title: 'RESTAURANT REVIEWS PWA',
         categories: [
             'development',
@@ -23,6 +23,19 @@ export const projects = [
         description: '',
         thumbnail: {
             src: 'https://sakhro.xyz/assets/imgs/portfolio/websites/restaurant_reviews_website.jpg',
+            title: 'IPhone on the table'
+        },
+        imgs: []
+    },
+    {
+        id: 'aaly_logo',
+        title: 'AALY LOGO',
+        categories: [
+            'design'
+        ],
+        description: '',
+        thumbnail: {
+            src: 'https://sakhro.xyz/assets/imgs/portfolio/logo/calla_logo.jpg',
             title: 'IPhone on the table'
         },
         imgs: []

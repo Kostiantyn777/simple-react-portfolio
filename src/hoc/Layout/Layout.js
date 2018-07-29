@@ -34,7 +34,9 @@ class Layout extends Component {
             <MuiThemeProvider theme={theme}>
                 <CssBaseline/>
                 <Header/>
-                {children}
+                <main>
+                    {children}
+                </main>
             </MuiThemeProvider>
         )
     }

@@ -3,13 +3,14 @@ import {Divider, Grid, Typography} from "@material-ui/core";
 
 import {Link} from 'react-router-dom';
 
-const projectsList = ({projects}) => (
+const projectsList = ({projects, threeCols}) => (
     <Grid container spacing={16}>
         {projects.map(({id, title, categories, thumbnail}) => (
-            <Grid item xs={12} sm={6} key={id}>
+            <Grid item xs={12} sm={threeCols ? 4 : 6} key={id}>
                 <img src={thumbnail.src}
                      title={thumbnail.title}
                      alt={thumbnail.title}
+                     style={{borderRadius: '5px 5px 0 0'}}
                 />
                 <Typography color='secondary'
                             style={{marginTop: '0.35em'}}

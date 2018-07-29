@@ -23,10 +23,11 @@ const greeting = ({classes}) => (
                 <Typography variant='display2'>My name is Sava Sakhro</Typography>
                 <Typography variant='headline' component='p'>
                     I like helping people solve their problems
-                    through <Link className='link' to='/portfolio/design'>design</Link>, <Link className='link'
-                                                                                               to='/portfolio/web_development'>web
+                    through <Link className='link'
+                                  to='/portfolio/design'>design</Link>, <Link className='link'
+                                                                              to='/portfolio/development'>web
                     development</Link> and
-                    everything <Link className='link' to='/portfolio/other'>in between</Link>
+                    everything <Link className='link' to='/portfolio'>in between</Link>
                 </Typography>
             </Grid>
         </Grid>
