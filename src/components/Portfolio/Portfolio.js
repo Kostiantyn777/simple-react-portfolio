@@ -3,7 +3,7 @@ import {Button, Typography} from "@material-ui/core";
 import ProjectsList from "../ProjectsList/ProjectsList";
 import {projects} from "../../data";
 
-const portfolioHomePage = ({pushToPortfolioPage, pushToProjectPage}) => {
+const portfolio = ({pushToPortfolioPage, pushToProjectPage}) => {
     const updatedProjects = projects.slice(0, 2);
 
     return (
@@ -23,4 +23,4 @@ const portfolioHomePage = ({pushToPortfolioPage, pushToProjectPage}) => {
     )
 };
 
-export default portfolioHomePage;
+export default portfolio;

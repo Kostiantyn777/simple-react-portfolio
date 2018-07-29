@@ -1,7 +1,7 @@
 import React, {Fragment, Component} from 'react';
 
 import Greeting from "../../components/Greeting/Greeting";
-import PortfolioHomePage from "../../components/PortfolioHomePage/PortfolioHomePage";
+import Portfolio from "../../components/Portfolio/Portfolio";
 
 class HomePage extends Component {
 
@@ -17,7 +17,7 @@ class HomePage extends Component {
         return (
             <Fragment>
                 <Greeting/>
-                <PortfolioHomePage pushToPortfolioPage={this.pushToPortfolioPage} pushToProjectPage={this.pushToProjectPage}/>
+                <Portfolio pushToPortfolioPage={this.pushToPortfolioPage} pushToProjectPage={this.pushToProjectPage}/>
             </Fragment>
         )
     }

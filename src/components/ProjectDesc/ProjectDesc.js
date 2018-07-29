@@ -15,7 +15,7 @@ const projectDesc = ({description, categories, url}) => {
             {
                 url.length > 0
                     ? (<Typography style={{marginTop: 5, marginBottom: 5}} variant='body2'>
-                        Here you can check <a href={url} target='_blank'>this project</a>.
+                        Here you can check <a href={url} className='link' target='_blank'>this project</a>.
                     </Typography>)
                     : null
             }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {withRouter} from 'react-router-dom'
 import {createMuiTheme, CssBaseline, MuiThemeProvider} from '@material-ui/core';
 import Header from "../../components/Header/Header";
 
@@ -27,13 +28,18 @@ const theme = createMuiTheme({
 });
 
 class Layout extends Component {
+
+    onBackClickHandler = () => {
+        this.props.history.goBack();
+    };
+
     render() {
-        const {children} = this.props;
+        const {children, location} = this.props;
 
         return (
             <MuiThemeProvider theme={theme}>
                 <CssBaseline/>
-                <Header/>
+                <Header location={location} onBackClick={this.onBackClickHandler}/>
                 <main>
                     {children}
                 </main>
@@ -42,4 +48,4 @@ class Layout extends Component {
     }
 }
 
-export default Layout;
+export default withRouter(Layout);
