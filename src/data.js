@@ -6,12 +6,14 @@ export const projects = [
             'development',
             'design'
         ],
-        description: '',
+        description: `The previous version of this website had a problem with the performance that\'s why we decided to create a new one. 
+        For this task, I used Angular 5 which I connected to the Google Firebase as a backend to create Performance Web App. In summary average page load, in relation to the previous version, decreased by 96%.`,
         thumbnail: {
             src: 'https://sakhro.xyz/assets/imgs/portfolio/websites/wps_website.jpg',
             title: 'IPhone on the table'
         },
-        imgs: []
+        imgs: [],
+        url: 'https://world-poker-school.com/'
     },
     {
         id: 'restaurant_reviews',
@@ -25,7 +27,8 @@ export const projects = [
             src: 'https://sakhro.xyz/assets/imgs/portfolio/websites/restaurant_reviews_website.jpg',
             title: 'IPhone on the table'
         },
-        imgs: []
+        imgs: [],
+        url: ''
     },
     {
         id: 'aaly_logo',
@@ -38,6 +41,7 @@ export const projects = [
             src: 'https://sakhro.xyz/assets/imgs/portfolio/logo/calla_logo.jpg',
             title: 'IPhone on the table'
         },
-        imgs: []
+        imgs: [],
+        url: ''
     }
 ];

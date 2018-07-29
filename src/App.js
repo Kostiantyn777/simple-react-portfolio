@@ -5,17 +5,18 @@ import asyncComponent from './hoc/asyncComponent/asyncComponent'
 import {Route, Switch, Redirect} from 'react-router-dom';
 import HomePage from './containers/HomePage/HomePage'
 
-const asyncPortfolio = asyncComponent(() => import('./containers/PortfolioPage/PortfolioPage'));
+const asyncPortfolioPage = asyncComponent(() => import('./containers/PortfolioPage/PortfolioPage'));
+const asyncProjectPage = asyncComponent(() => import('./containers/ProjectPage/ProjectPage'));
 
 class App extends Component {
   render() {
     return (
         <Layout>
             <Switch>
-                <Route path='/portfolio/development' component={asyncPortfolio}/>
-                <Route path='/portfolio/design' component={asyncPortfolio}/>
-                <Route path='/portfolio/:projectId' component={asyncPortfolio}/>
-                <Route path='/portfolio' exact component={asyncPortfolio}/>
+                <Route path='/portfolio/development' component={asyncPortfolioPage}/>
+                <Route path='/portfolio/design' component={asyncPortfolioPage}/>
+                <Route path='/portfolio/:projectId' component={asyncProjectPage}/>
+                <Route path='/portfolio' exact component={asyncPortfolioPage}/>
                 <Route path='/' exact component={HomePage}/>
                 <Redirect to='/'/>
             </Switch>
