@@ -3,7 +3,7 @@ import {Button, Typography} from "@material-ui/core";
 import ProjectsList from "../ProjectsList/ProjectsList";
 import {projects} from "../../data";
 
-const portfolioHomePage = ({pushToPortfolioPage}) => {
+const portfolioHomePage = ({pushToPortfolioPage, pushToProjectPage}) => {
     const updatedProjects = projects.slice(0, 2);
 
     return (
@@ -11,7 +11,7 @@ const portfolioHomePage = ({pushToPortfolioPage}) => {
             <Typography variant="display1" style={{textAlign: 'center', margin: '40px 0 32px'}}>
                 LATEST PROJECTS
             </Typography>
-            <ProjectsList projects={updatedProjects}/>
+            <ProjectsList projects={updatedProjects} pushToProjectPage={pushToProjectPage}/>
             <Button variant='outlined'
                     onClick={pushToPortfolioPage}
                     color='secondary'

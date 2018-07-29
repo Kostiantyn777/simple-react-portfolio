@@ -9,11 +9,15 @@ class HomePage extends Component {
         this.props.history.push('/portfolio')
     };
 
+    pushToProjectPage = projectId => () => {
+        this.props.history.push('/portfolio/' + projectId)
+    };
+
     render() {
         return (
             <Fragment>
                 <Greeting/>
-                <PortfolioHomePage pushToPortfolioPage={this.pushToPortfolioPage}/>
+                <PortfolioHomePage pushToPortfolioPage={this.pushToPortfolioPage} pushToProjectPage={this.pushToProjectPage}/>
             </Fragment>
         )
     }

@@ -14,8 +14,8 @@ class App extends Component {
             <Switch>
                 <Route path='/portfolio/development' component={asyncPortfolio}/>
                 <Route path='/portfolio/design' component={asyncPortfolio}/>
-                <Route path='/portfolio' component={asyncPortfolio}/>
-                {/*<Route path='/portfolio/:projectId' component={asyncPortfolio}/>*/}
+                <Route path='/portfolio/:projectId' component={asyncPortfolio}/>
+                <Route path='/portfolio' exact component={asyncPortfolio}/>
                 <Route path='/' exact component={HomePage}/>
                 <Redirect to='/'/>
             </Switch>
