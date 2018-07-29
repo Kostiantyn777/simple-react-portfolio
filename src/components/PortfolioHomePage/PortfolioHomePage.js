@@ -3,7 +3,7 @@ import {Button, Typography} from "@material-ui/core";
 import ProjectsList from "../ProjectsList/ProjectsList";
 import {projects} from "../../data";
 
-const portfolioHomePage = () => {
+const portfolioHomePage = ({pushToPortfolioPage}) => {
     const updatedProjects = projects.slice(0, 2);
 
     return (
@@ -13,6 +13,7 @@ const portfolioHomePage = () => {
             </Typography>
             <ProjectsList projects={updatedProjects}/>
             <Button variant='outlined'
+                    onClick={pushToPortfolioPage}
                     color='secondary'
                     style={{display: 'block', margin: '40px auto 32px'}}
             >
