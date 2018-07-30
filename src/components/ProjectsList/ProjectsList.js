@@ -2,10 +2,10 @@ import React from 'react';
 import {Grid} from "@material-ui/core";
 import ProjectCard from './ProjectCard/ProjectCard';
 
-const projectsList = ({projects, threeCols, pushToProjectPage}) => (
+const projectsList = ({projects, pushToProjectPage}) => (
     <Grid container spacing={16}>
         {projects.map(project => (
-            <Grid item xs={12} sm={6} md={threeCols ? 4 : 6} key={project.id}>
+            <Grid item xs={12} sm={6} md={4} key={project.id}>
                 <ProjectCard {...project} pushToProjectPage={pushToProjectPage}/>
             </Grid>
         ))}

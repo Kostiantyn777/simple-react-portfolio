@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import CategoriesList from '../../CategoriesList/CategoriesList';
 
 const styles = theme => ({
-    thumbnail: {
+    img: {
         borderRadius: '5px 5px 0 0',
         cursor: 'pointer',
         transition: 'box-shadow 100ms ease-in-out',
@@ -23,13 +23,15 @@ const styles = theme => ({
     }
 });
 
-const projectCard = ({classes, id, title, categories, thumbnail, pushToProjectPage}) => (
+const projectCard = ({classes, id, title, categories, img, pushToProjectPage}) => (
     <Fragment>
-        <img src={thumbnail.src}
-             title={thumbnail.title}
-             alt={thumbnail.title}
+        <img src={img.lg}
+             srcSet={`${img.sm} 360w, ${img.md} 560w, ${img.lg} 950w`}
+             sizes='((max-width: 960px) 560px, (min-width: 961px) 360px'
+             title={img.title}
+             alt={img.title}
              onClick={pushToProjectPage(id)}
-             className={classes.thumbnail}
+             className={classes.img}
         />
         <CategoriesList categories={categories}/>
         <Typography gutterBottom

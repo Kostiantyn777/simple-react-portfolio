@@ -2,7 +2,7 @@ import React from 'react';
 import {withStyles} from '@material-ui/core';
 
 const styles = theme => ({
-    thumbnail: {
+    img: {
         borderRadius: '5px',
         boxShadow: theme.shadows[2],
         // transition: 'box-shadow 100ms ease-in-out',
@@ -12,6 +12,12 @@ const styles = theme => ({
     }
 });
 
-const projectImgs = ({classes, thumbnail}) => <img src={thumbnail.src} className={classes.thumbnail} alt={thumbnail.title}/>;
+const projectImgs = ({classes, img}) => (
+    <img src={img.lg}
+         srcSet={`${img.sm} 360w, ${img.md} 560w, ${img.lg} 950w`}
+         sizes='(max-width: 390px) 360px, (max-width: 590px) 560px, (max-width: 960px) 930px'
+         className={classes.img}
+         alt={img.title}/>
+);
 
 export default withStyles(styles)(projectImgs);

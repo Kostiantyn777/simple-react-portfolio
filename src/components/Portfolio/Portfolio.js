@@ -4,7 +4,7 @@ import ProjectsList from "../ProjectsList/ProjectsList";
 import {projects} from "../../data";
 
 const portfolio = ({pushToPortfolioPage, pushToProjectPage}) => {
-    const updatedProjects = projects.slice(0, 2);
+    const updatedProjects = projects.slice(0, 3);
 
     return (
         <section className='fixed-container'>

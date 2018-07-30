@@ -24,7 +24,7 @@ class PortfolioPage extends Component {
         return (
             <section className='fixed-container'>
                 <Typography variant="display1" className='container-title'>PORTFOLIO</Typography>
-                <ProjectsList projects={displayedProjects} threeCols pushToProjectPage={this.pushToProjectPage}/>
+                <ProjectsList projects={displayedProjects} pushToProjectPage={this.pushToProjectPage}/>
             </section>
         )
     }

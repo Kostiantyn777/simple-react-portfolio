@@ -36,7 +36,7 @@ const greeting = ({classes}) => (
     <section className={classes.root}>
         <img src={avatar2x}
              className={classes.avatar}
-             srcSet={`${avatar1x} 1280w, ${avatar2x} 2x`}
+             srcSet={`${avatar1x} 1280w, ${avatar2x} 4160w`}
              sizes='100vw'
              alt='Smiling Sava Sakhro'
         />

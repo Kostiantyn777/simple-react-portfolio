@@ -8,8 +8,7 @@ import {projects} from "../../data";
 class ProjectPage extends Component {
     state = {
         description: '',
-        imgs: [],
-        thumbnail: {},
+        img: {},
         categories: [],
         title: '',
         url: ''
@@ -33,7 +32,7 @@ class ProjectPage extends Component {
     }
 
     render() {
-        const {title, description, thumbnail, categories, url} = this.state;
+        const {title, description, img, categories, url} = this.state;
 
         return (
             <section className='fixed-container'>
@@ -41,10 +40,10 @@ class ProjectPage extends Component {
                     {title}
                 </Typography>
                 <Grid container spacing={16}>
-                    <Grid item xs={12} sm={6} md={8}>
-                        <ProjectImgs thumbnail={thumbnail}/>
+                    <Grid item xs={12} md={8}>
+                        <ProjectImgs img={img}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} md={4}>
                         <ProjectDesc description={description} url={url} categories={categories}/>
                     </Grid>
                 </Grid>
