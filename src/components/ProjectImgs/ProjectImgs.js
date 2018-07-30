@@ -4,7 +4,7 @@ import {withStyles} from '@material-ui/core';
 const styles = theme => ({
     thumbnail: {
         borderRadius: '5px',
-        boxShadow: theme.shadows[1],
+        boxShadow: theme.shadows[2],
         // transition: 'box-shadow 100ms ease-in-out',
         // '&:hover': {
         //     boxShadow: theme.shadows[8]
