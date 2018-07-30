@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom'
 import {createMuiTheme, CssBaseline, MuiThemeProvider} from '@material-ui/core';
 import Header from "../../components/Header/Header";
+// import Footer from "../../components/Footer/Footer";
 
 const theme = createMuiTheme({
     overrides: {
@@ -40,9 +41,10 @@ class Layout extends Component {
             <MuiThemeProvider theme={theme}>
                 <CssBaseline/>
                 <Header location={location} onBackClick={this.onBackClickHandler}/>
-                <main>
+                <main> {/*style={{minHeight: 'calc(100vh - 162px)'}}*/}
                     {children}
                 </main>
+                {/*<Footer/>*/}
             </MuiThemeProvider>
         )
     }

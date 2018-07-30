@@ -24,7 +24,6 @@ const projectDesc = ({description, categories, url}) => {
                     ? <CategoriesList categories={categories}/>
                     : null
             }
-
         </section>
     )
 };

@@ -14,11 +14,11 @@ const styles = theme => ({
         }
     },
     title: {
-        color: 'inherit',
+        color: theme.palette.secondary.main,
         textDecoration: 'none',
         transition: 'color 100ms ease-in-out',
         '&:hover': {
-            color: theme.palette.secondary.main
+            color: 'inherit'
         }
     }
 });

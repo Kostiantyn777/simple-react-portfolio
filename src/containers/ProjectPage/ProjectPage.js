@@ -41,10 +41,10 @@ class ProjectPage extends Component {
                     {title}
                 </Typography>
                 <Grid container spacing={16}>
-                    <Grid item xs={12} sm={8}>
+                    <Grid item xs={12} sm={6} md={8}>
                         <ProjectImgs thumbnail={thumbnail}/>
                     </Grid>
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectDesc description={description} url={url} categories={categories}/>
                     </Grid>
                 </Grid>

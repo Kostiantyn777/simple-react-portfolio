@@ -7,7 +7,7 @@ const portfolio = ({pushToPortfolioPage, pushToProjectPage}) => {
     const updatedProjects = projects.slice(0, 2);
 
     return (
-        <section style={{maxWidth: 1140, margin: 'auto'}}>
+        <section className='fixed-container'>
             <Typography variant="display1" style={{textAlign: 'center', margin: '40px 0 32px'}}>
                 LATEST PROJECTS
             </Typography>
