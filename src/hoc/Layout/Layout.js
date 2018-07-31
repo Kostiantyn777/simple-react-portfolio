@@ -41,7 +41,7 @@ class Layout extends Component {
             <MuiThemeProvider theme={theme}>
                 <CssBaseline/>
                 <Header location={location} onBackClick={this.onBackClickHandler}/>
-                <main> {/*style={{minHeight: 'calc(100vh - 162px)'}}*/}
+                <main> {/*style={{minHeight: 'calc(100vh - 162px)'}} for sticky footer*/}
                     {children}
                 </main>
                 {/*<Footer/>*/}

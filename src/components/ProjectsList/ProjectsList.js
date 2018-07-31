@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard/ProjectCard';
 const projectsList = ({projects, pushToProjectPage}) => (
     <Grid container spacing={16}>
         {projects.map(project => (
-            <Grid item xs={12} sm={6} md={4} key={project.id}>
+            <Grid item xs={12} sm={6} md={4} key={project.id} component='section'>
                 <ProjectCard {...project} pushToProjectPage={pushToProjectPage}/>
             </Grid>
         ))}

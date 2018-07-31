@@ -53,7 +53,7 @@ export const projects = [
             sm: wps_360,
             md: wps_560,
             lg: wps_950,
-            title: 'IPhone on the table'
+            title: 'Phone on the table'
         },
         url: 'https://world-poker-school.com/'
     },
@@ -79,7 +79,7 @@ export const projects = [
             sm: rr_360,
             md: rr_560,
             lg: rr_950,
-            title: 'IPhone on the table'
+            title: 'Phone on the table'
         },
         url: 'https://github.com/Sakhro/restaurant-project'
     },

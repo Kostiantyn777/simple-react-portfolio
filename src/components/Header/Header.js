@@ -22,10 +22,10 @@ const header = ({classes, location, onBackClick}) => (
                  style={{display: 'flex', justifyContent: 'center', maxWidth: 1140, width: '100%', margin: 'auto'}}>
             {location.pathname === '/'
                 ? null
-                : <span area-label='Go back' className={classes.backButton} tabIndex={0} onClick={onBackClick}><ChevronLeft/>Back</span>}
+                : <span aria-label='Go back' className={classes.backButton} tabIndex={0} onClick={onBackClick}><ChevronLeft/>Back</span>}
             <div style={{flexGrow: 1, textAlign: 'center'}}>
                 <Link to='/'
-                      area-label='Go to the home page'
+                      aria-label='Go to the home page'
                       style={{
                           height: 'inherit',
                           paddingTop: 4,

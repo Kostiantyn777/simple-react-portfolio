@@ -34,13 +34,8 @@ const projectCard = ({classes, id, title, categories, img, pushToProjectPage}) =
              className={classes.img}
         />
         <CategoriesList categories={categories}/>
-        <Typography gutterBottom
-                    variant="headline"
-                    component="h2"
-        >
-            <Link className={classes.title}
-                  to={'/portfolio/' + id}
-            >{title}</Link>
+        <Typography gutterBottom variant="headline" component="h2">
+            <Link className={classes.title} to={'/portfolio/' + id}>{title}</Link>
         </Typography>
         <Divider/>
     </Fragment>
