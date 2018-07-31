@@ -38,7 +38,7 @@ root/
     data.js <--- HERE
 ```
 
-Feel free to add your own projects to portfolio and/or rebuild this project for fetching data from your server APIs.
+Feel free to add your own projects, information and images on the website and/or rebuild this project for fetching data from your server APIs.
 
 ## Production 
 
@@ -52,4 +52,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### License
 
-MIT license
+[MIT license](https://github.com/Sakhro/simple-react-portfolio/blob/master/LICENSE)
