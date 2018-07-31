@@ -16,7 +16,7 @@ After download, run below command in the console from project root directory
 npm install
 ```
 
-This will install all needed dependency and packages.
+This will install all needed dependencies and packages.
 
 After all packages installed successfully, run from the project root directory 
 
